@@ -1,5 +1,7 @@
-<pre>
+
 <?php
+
+echo "<pre>";
 
 echo <<<EOF
     shell_exec( 'echo "<?php while(1) ; " | php > /dev/null 2>&1 &' );
@@ -7,6 +9,8 @@ echo <<<EOF
     \$current_datetime = @date('Y-m-d H:i:s', @time());
     echo "Service @ \$current_datetime:".file_get_contents('/etc/hostname');
 EOF;
+
+echo "</pre>";
 
 echo "<br/>";
 
